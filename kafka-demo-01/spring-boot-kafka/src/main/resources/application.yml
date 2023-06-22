@@ -1,9 +1,9 @@
 server:
-  port: 8080
+  port: 8091
 
 spring:
   kafka:
-    bootstrap-servers: 192.168.65.60:9092,192.168.65.60:9093,192.168.65.60:9094
+    bootstrap-servers: worker1:9092,worker2:9092,worker3:9092
     producer: # 生产者
       retries: 3 # 设置大于0的值，则客户端会将发送失败的记录重新发送
       batch-size: 16384
